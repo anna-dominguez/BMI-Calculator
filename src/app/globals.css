@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply font-medium text-headingL lg:text-headingXL text-center lg:text-start tracking-[-2.4px];
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h3 {
+    @apply font-medium text-headingM tracking-[-1.2px];
+  }
+  h2 {
+    @apply font-medium text-[32px] tracking-[-1.6px];
+  }
+  .radio-button {
+    @apply relative w-[31px] h-[31px] cursor-pointer appearance-none rounded-full border border-borders text-gunmetal transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:opacity-0 before:transition-opacity hover:before:opacity-10 hover:border-blue checked:border-none;
+  }
+  .card {
+    @apply p-6 shadow-[16px_32px_56px_0_rgba(143,174,207,0.25)] rounded-2xl bg-white grid gap-4;
+  }
 }
