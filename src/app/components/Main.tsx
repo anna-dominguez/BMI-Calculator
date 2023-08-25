@@ -18,13 +18,13 @@ const Main = () => {
         <div className="grid gap-8 mx-6 mb-6">
           <h2>What your BMI result means</h2>
           <p className="text-darkElectricBlue">
-            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
-            Maintaining a healthy weight may lower your chances of experiencing
-            health issues later on, such as obesity and type 2 diabetes. Aim for
-            a nutritious diet with reduced fat and sugar content, incorporating
-            ample fruits and vegetables. Additionally, strive for regular
-            physical activity, ideally about 30 minutes daily for five days a
-            week.
+            A BMI range of 18.5 to 24.9 is considered a {"'"}healthy weight.
+            {"'"} Maintaining a healthy weight may lower your chances of
+            experiencing health issues later on, such as obesity and type 2
+            diabetes. Aim for a nutritious diet with reduced fat and sugar
+            content, incorporating ample fruits and vegetables. Additionally,
+            strive for regular physical activity, ideally about 30 minutes daily
+            for five days a week.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ const Main = () => {
           </div>
           <p className="text-gunmetal">
             The development and body fat composition of girls and boys vary with
-            age. Consequently, a child's age and gender are considered when
+            age. Consequently, a child{"'"}s age and gender are considered when
             evaluating their BMI.
           </p>
         </div>
@@ -98,7 +98,7 @@ const Main = () => {
           </div>
           <p className="text-gunmetal">
             BMI may misclassify muscular individuals as overweight or obese, as
-            it doesn't differentiate muscle from fat.
+            it doesn{"'"}t differentiate muscle from fat.
           </p>
         </div>
         <div className="card md:col-span-2 lg:col-start-3">
