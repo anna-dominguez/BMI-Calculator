@@ -66,6 +66,7 @@ const Header = () => {
                 name="type"
                 type="radio"
                 checked={isMetric}
+                onChange={() => setIsMetric(true)}
                 className="before:content[''] peer peer-checked:border-none radio-button"
               />
               <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-gunmetal opacity-0 transition-opacity peer-checked:opacity-100">
@@ -93,6 +94,7 @@ const Header = () => {
                 name="type"
                 type="radio"
                 checked={!isMetric}
+                onChange={() => setIsMetric(false)}
                 className="before:content[''] peer peer-checked:border-none radio-button"
               />
               <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-gunmetal opacity-0 transition-opacity peer-checked:opacity-100">
