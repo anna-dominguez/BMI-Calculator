@@ -28,7 +28,7 @@ const Main = () => {
           </p>
         </div>
       </section>
-      <section className="bg-gradient-to-l from-[#D6E6FE50] to-transparent p-6 grid lg:grid-cols-3 gap-10 lg:px-[140px]">
+      <section className="bg-gradient-to-l from-[#D6E6FE50] to-transparent p-6 md:px-10 md:py-[60px] lg:py-20 grid lg:grid-cols-3 gap-10 lg:px-[140px]">
         <div className="grid md:grid-flow-col lg:grid-flow-row items-center gap-8">
           <Image src={IconEating} alt="Icon eating" />
           <div className="grid gap-6">
